@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">4-Free</string>
+    <string-array name="language_options">
+        <item>Español</item>
+        <item>Inglés</item>
+        <item>Portugués</item>
+    </string-array>
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "735718185656",
+    "project_id": "free-c4561",
+    "storage_bucket": "free-c4561.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735718185656:android:c8b245c78273146ca9b24d",
+        "android_client_info": {
+          "package_name": "sv.edu.itca.a4_free"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6UKve62fIBUzZ24v_hpWAvcjU2NDCbSg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

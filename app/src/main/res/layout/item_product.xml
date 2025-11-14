@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_product"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="#E5E7EB"
+            android:src="@drawable/ic_launcher_foreground"
+            android:padding="32dp"
+            app:tint="#10B981" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:id="@+id/title_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#111827"
+                tools:text="Sillón Vintage de Terciopelo Verde" />
+
+            <TextView
+                android:id="@+id/desc_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#6B7280"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginTop="4dp"
+                tools:text="Sillón de terciopelo en excelente estado. Ideal para sala o estudio, necesita poco mantenimiento." />
+
+            <TextView
+                android:id="@+id/user_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="#E0F7FA"
+                android:padding="4dp"
+                android:textColor="#065F46"
+                android:textSize="12sp"
+                tools:text="Publicado por: Ana M." />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".LenguageActivity">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/whatsapp_image_2025_10_30_at_10_20_30_am"
+        android:contentDescription="@string/app_name"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona tu idioma"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#111827"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnSpanish"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Español"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnEnglish"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="English"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnPortuguese"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Português" />
+
+</LinearLayout>

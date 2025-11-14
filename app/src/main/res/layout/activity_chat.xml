@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F5F5F5"
+    tools:context=".ChatActivity">
+
+    <TextView
+        android:id="@+id/chatTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F29422"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="Chat con Usuario"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="TextContrastCheck" />
+
+    <!-- Lista de mensajes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerChat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/chatTitle"
+        android:layout_above="@id/chatInputLayout"
+        android:padding="8dp" />
+
+    <!-- Caja de texto y botón enviar -->
+    <LinearLayout
+        android:id="@+id/chatInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_bg"
+            android:hint="Escribe un mensaje..."
+            android:inputType="text"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/btnSend"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@android:color/transparent"
+            android:contentDescription="Enviar" />
+    </LinearLayout>
+
+</RelativeLayout>

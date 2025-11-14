@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publicar Producto"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#111827"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Imagen principal (obligatoria) -->
+        <ImageView
+            android:id="@+id/imgMain"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/bg_image_placeholder"
+            android:contentDescription="Imagen principal"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnSelectMainImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar imagen principal"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Imágenes adicionales -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imgExtra1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_image_placeholder" />
+
+            <ImageView
+                android:id="@+id/imgExtra2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="6dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_image_placeholder" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSelectExtraImages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agregar imágenes adicionales"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Campos de texto -->
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="Título del producto"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descripción"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:background="@drawable/bg_input"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/btnPublish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publicar"
+            android:backgroundTint="#8B5CF6"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:padding="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

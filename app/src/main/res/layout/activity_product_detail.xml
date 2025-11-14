@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    tools:context=".ProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Imagen del producto -->
+        <ImageView
+            android:id="@+id/img_product_detail"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:background="#E5E7EB"
+            android:contentDescription="Imagen del producto" />
+
+        <!-- Título del producto -->
+        <TextView
+            android:id="@+id/title_product_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sillón de terciopelo"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp"
+            android:textColor="#111827" />
+
+        <!-- Descripción del producto -->
+        <TextView
+            android:id="@+id/desc_product_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sillón en excelente estado. Ideal para sala o estudio."
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#374151" />
+
+        <!-- Nombre / contacto -->
+        <TextView
+            android:id="@+id/contact_product_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donante: Carlos Pérez"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp"
+            android:textColor="#6B7280" />
+
+        <!-- Botón para solicitar -->
+        <Button
+            android:id="@+id/btn_request_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Solicitar producto"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#EF9410"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</ScrollView>
